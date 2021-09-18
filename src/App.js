@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     console.log(category);
-    fetch(`https://pixabay.com/api/?key=23452125-e7c43c1b00295be419408dd3c;&q=${category}&image_type=photo&pretty=true`)
+    fetch(`https://pixabay.com/api/?key=23452125-e7c43c1b00295be419408dd3c&q=${category}&image_type=photo&pretty=true`)
       .then(res => res.json())
       .then(data => {
         setImages(data.hits);
